@@ -1,56 +1,42 @@
-.main-container {
-  background-color: white;
-  padding-bottom: 1rem;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
-.header {
-  background-color: aquamarine;
-  padding: 1px;
-  padding-left: 16px;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.createtemplate-box {
-  padding-left: 16px;
-}
-
-.folderStructure-box {
-  padding-left: 16px;
-}
-
-.write-code {
-  background-color: #f7f7f7;
-  padding: 12px;
-}
-
-.api-box {
-  display: flex;
-}
-
-.fix-header {
-  position: sticky;
-  top: 0;
-  background-color: aqua;
-  padding: 16px;
-}
-
-.github-link {
-  margin-left: 1rem;
-}
-
-.point {
-  display: list-item;
-}
-
-@media (max-width: 600px) {
-  .main-container {
-    width: fit-content;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
-  .api-box {
-    display: block;
+  to {
+    transform: rotate(360deg);
   }
-  .github-link {
-    display: flex;
-    margin: 10px;
-    margin-top: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
   }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
 }
