@@ -93,7 +93,7 @@ export class Service {
     }
   }
 
-
+  
 // storage file services...
   async uploadFile(file) {
     try {
